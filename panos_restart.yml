@@ -1,0 +1,4 @@
+- panos_restart:
+    ip_address: '{{ ip_address }}'
+    username: "admin"
+    password: "admin"
