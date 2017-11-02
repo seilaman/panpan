@@ -1,5 +1,5 @@
 - name: Restart firewall
-  hosts: "PaloAltoFirewalls"
+  hosts: PA-test
   connection: local
   gather_facts: False
 
