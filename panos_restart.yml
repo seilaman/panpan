@@ -1,5 +1,5 @@
 - name: Restart firewall
-  hosts: "Palo Alto Firewalls"
+  hosts: PaloAltoFirewalls
   connection: local
   gather_facts: False
 
@@ -8,7 +8,6 @@
 
   tasks:
   - name: Grab the credentials from ansible-vault
-    include_vars: 'firewall-secrets.yml'
     no_log: 'yes'
 
   - name: Restart panos device
