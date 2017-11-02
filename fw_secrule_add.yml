@@ -9,7 +9,7 @@
   tasks:
   - name: Grab the credentials from ansible-vault
     include_vars: 'firewall-secrets.yml'
-    no_log: 'yes'
+    no_log: 'no'
 
   - name: Add test rule 1 to the firewall
     panos_security_rule:
