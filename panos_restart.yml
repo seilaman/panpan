@@ -1,13 +1,11 @@
 - name: Restart firewall
   hosts: PaloAltoFirewalls
   connection: local
-  gather_facts: False
-
-  roles:
-    - role: PaloAltoNetworks.paloaltonetworks
+  gather_facts: True
 
   tasks:
   - name: Restart panos device
     panos_restart:
       ip_address: hosts
-      password: "admin"
+      username: "{{ user }}"
+      password: "{{ pass }}"
