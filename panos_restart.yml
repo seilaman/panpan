@@ -7,9 +7,6 @@
     - role: PaloAltoNetworks.paloaltonetworks
 
   tasks:
-  - name: Grab the credentials from ansible-vault
-    no_log: 'yes'
-
   - name: Restart panos device
     panos_restart:
       ip_address: "{{ ip_address }}"
