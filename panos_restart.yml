@@ -10,4 +10,4 @@
   - name: Restart panos device
     panos_restart:
       ip_address: hosts
-      password: "{{ password }}"
+      password: "admin"
