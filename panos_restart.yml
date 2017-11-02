@@ -9,6 +9,4 @@
   tasks:
   - name: Restart panos device
     panos_restart:
-      ip_address: "{{ ip_address }}"
-      username: "{{ username }}"
-      password: "{{ password }}"
+    
